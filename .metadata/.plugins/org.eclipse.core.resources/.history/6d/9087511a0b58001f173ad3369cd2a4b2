@@ -1,0 +1,26 @@
+package com.driverfactory.in;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+public class ConfigReader {
+	static Properties prop;
+	DriverFactory DriverFactory;
+public static Properties configReaderFile() throws IOException
+{
+String str=	System.getProperty("user.dir");
+	System.out.println();
+File file =new File(str);	
+FileInputStream fis=new FileInputStream(file);
+ prop.load(fis);
+return prop;
+}
+public void addProp() {
+String stt=	prop.getProperty("browser");
+DriverFactory.initlizeBrowser(stt);
+DriverFactory.getDriver();
+}
+
+}

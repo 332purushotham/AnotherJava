@@ -1,0 +1,27 @@
+package com.packge.in;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class NavigateCommandsClass {
+
+	@Test
+	public void setUp() {
+		// TODO Auto-generated method stub
+
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver=new ChromeDriver();
+		driver.navigate().to("http://omayo.blogspot.com/");
+		driver.findElement(By.xpath("//textarea[@id='ta1']")).sendKeys("this");////a[@id="link2"]
+		driver.findElement(By.xpath("//a[@id='link2']")).click();
+		driver.navigate().back();
+		driver.navigate().forward();
+		
+		
+	}
+	
+}

@@ -1,0 +1,11 @@
+package com.packge.in;
+
+import org.openqa.selenium.WebDriver;
+
+public class BrokenLinksClass{
+	WebDriver driver;
+	public BrokenLinksClass(WebDriver driver){
+		
+		this.driver=driver;
+	}
+}

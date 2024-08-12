@@ -1,0 +1,14 @@
+package com.packge.in;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import com.driverfactory.in.ConfigReader;
+import com.driverfactory.in.ConfigReader;
+import com.setup.in.SetupClass;
+
+public class BrokenLinksClass extends ConfigReader{
+public BrokenLinksClass() {
+	PageFactory.initElements(driver, this);
+}	 
+}

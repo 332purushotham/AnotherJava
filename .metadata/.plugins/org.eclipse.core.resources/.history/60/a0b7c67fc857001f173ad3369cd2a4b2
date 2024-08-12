@@ -1,0 +1,14 @@
+package com.packge.in;
+
+import org.openqa.selenium.WebDriver;
+
+import com.setup.in.SetupClass;
+
+public class BrokenLinksClass extends SetupClass{
+	public static WebDriver driver=null;
+	public BrokenLinksClass(WebDriver driver){
+		
+		this.driver=driver;
+	}
+
+}

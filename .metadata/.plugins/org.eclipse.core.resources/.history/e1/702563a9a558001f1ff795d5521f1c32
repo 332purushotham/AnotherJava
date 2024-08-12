@@ -1,0 +1,12 @@
+package com.pages.in;
+
+import org.openqa.selenium.support.PageFactory;
+
+import com.driverfactory.in.ConfigReader;
+
+public class LoginPag extends ConfigReader{
+public LoginPag() {
+	PageFactory.initElements(driver, this);
+}
+
+}

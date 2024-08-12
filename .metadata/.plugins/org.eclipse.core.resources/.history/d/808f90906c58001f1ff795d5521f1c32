@@ -1,0 +1,29 @@
+package com.packge.in;
+
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+import com.driverfactory.in.ConfigReader;
+
+import com.setup.in.SetupClass;
+
+public class BrokenLinksClass extends ConfigReader{
+	
+public BrokenLinksClass() throws IOException {
+
+	PageFactory.initElements(driver, this);
+}	
+@Test
+public void setUpUrl() {
+	
+	driver.get("https://www.flipkart.com/");
+WebElement ele=driver.findElement(By.tagName("a"));
+ele.getAttribute("href")
+
+}
+}

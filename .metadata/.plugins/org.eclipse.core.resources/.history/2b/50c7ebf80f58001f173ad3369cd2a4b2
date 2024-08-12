@@ -1,0 +1,37 @@
+package com.driverfactory.in;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class ConfigReader {
+	public static WebDriver driver;
+	static Properties prop;
+	static DriverFactory DriverFactory;
+	
+public static void configReaderFile() throws IOException
+{
+	prop=new Properties();
+String str=	System.getProperty("user.dir");
+	System.out.println(str);
+File file =new File(str+"/src/test/resources/config.properties");	///NewProject/src/test/resources/config.properties
+FileInputStream fis=new FileInputStream(file);
+ prop.load(fis);
+ String stt=	prop.getProperty("browser");
+ DriverFactory.initlizeBrowser(stt);
+ driver=DriverFactory.getDriver();
+}
+@Test
+public void addProp() {
+	prop=new Properties();
+
+driver.get("http://omayo.blogspot.com/");
+}
+
+}

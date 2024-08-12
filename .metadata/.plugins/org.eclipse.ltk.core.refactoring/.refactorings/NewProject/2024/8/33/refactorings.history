@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;SetupClass.java&apos; to &apos;NewProject/src/test/java/com.setup.in&apos;&#x0D;&#x0A;- Original project: &apos;NewProject&apos;&#x0D;&#x0A;- Destination element: &apos;NewProject/src/test/java/com.setup.in&apos;&#x0D;&#x0A;- Original element: &apos;com.packge.in.SetupClass.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/&lt;com.setup.in" element1="/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/&lt;com.packge.in{SetupClass.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1723369465053" units="1" version="1.0"/>
+</session>

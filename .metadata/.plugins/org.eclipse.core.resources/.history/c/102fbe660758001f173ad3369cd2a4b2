@@ -1,0 +1,22 @@
+package com.driverfactory.in;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class BaseClass {
+	public static WebDriver driver;
+public void initlizeBrowser(String browser) {
+	if(browser.equalsIgnoreCase("chrome"))
+	{
+		 driver=new ChromeDriver();
+		//driver.get("");
+	}
+	else if(browser.equalsIgnoreCase("firefox")){
+		driver=new FirefoxDriver();
+	}
+	else {
+		System.out.println("give proper driver name");
+	}
+}
+}

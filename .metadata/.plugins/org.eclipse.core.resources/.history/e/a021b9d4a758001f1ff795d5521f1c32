@@ -1,0 +1,17 @@
+package com.packge.in;
+
+import org.testng.annotations.Test;
+
+import com.pages.in.LoginPag;
+
+
+public class PageFactoryImpl_Class {
+	LoginPag loginPag;
+	@Test
+	public void pageFactoryMethod()
+	{
+		loginPag.password("hello");
+		loginPag.password("gulla");
+	}
+
+}
